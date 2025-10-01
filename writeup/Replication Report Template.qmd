@@ -1,5 +1,5 @@
 ---
-title: "Replication of Study X by Sample & Sample (20xx, Psychological Science)"
+title: "Replication of 'Visual sense of number vs. sense of magnitude in humans and machines' by Testolin, A., Dolfi, S., Rochus, M. et al. (2020, Sci Rep)"
 author: "Replication Author[s] (contact information)"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 format:
@@ -12,7 +12,17 @@ format:
 
 ## Introduction
 
-[No abstract is needed.]  Each replication project will have a straightforward, no frills report of the study and results.  These reports will be publicly available as supplementary material for the aggregate report(s) of the project as a whole.  Also, to maximize project integrity, the intro and methods will be written and critiqued in advance of data collection.  Introductions can be just 1-2 paragraphs clarifying the main idea of the original study, the target finding for replication, and any other essential information. You will likely contact the authors of the original study, so this should be professional and forward facing. It will NOT have a literature review -- that is in the original publication. You can write both the introduction and the methods in past tense.  
+Justification: 
+
+It is widely believed that the approximate number system (ANS) supports formation of non-exact representation of quantities in adults, children, and even animals (Dehaene, 2011). ANS affords abilities like quickly discriminating two different numerical quantities or estimating the amount of items. The acuity of discrimintation is proportional to the ratio of the two quantities, and is found to predict future math learning performance. However, debate exists around whether numerosity is the main perceptual feature driving ANS, or numerosity is actually estimated from non-numerical visual features. This paper attempted to reconcile this debate by testing deep neural networks and human participants in the same task, adopting a stimulus space that could disentangle the contribution of numerical and non-numerical features. For this replication project, I will try to recreate the human experiment in this paper. It is related to my side research interest of probing ANS in vision language models. 
+
+Methods: 
+
+In the original study, the researchers generated a database of 21970 images of dot arrays. They theorized that there are 3 dimensions that the dot array could vary on: numerosity, size (intrinsic), spacing (extrinsic). To test these, they picked 13 levels of numerosities, 13 levels of sizes and 13 levels of spacings, each put evenly on a log scale. That yielded 2197 combinations. They then generated 10 random dot images for each combination, resulting in 21970 images. For human experiment, they randomly sampled 300 pairs of dot images (10% with ratio between 0.5 and 0.6; 20% with ratio between 0.6 and 0.7; 30% with ratio between 0.7 and 0.8; 40% with ratio between 0.8 and 0.9). Stimuli were projected on a 19-inch color screen. The task consisted in 3 blocks of 100 trials each, for a total of 300 trials. Participants indicated which image in the pair had more dots by pressing left or right arrows on keyboard. (estimated 3-5 s per trial, about half to one hour for each participant) 
+
+I think there might be 2 chanllenges: first, the original project data is on osf, but coded in matlab; second, it might be hard (and maybe uneccesary) to follow the original procedure of generating 21970 images (beacuse most of them were used for the purpose of model training and testing), and it may be unrealistic to have 40 participants each complete a 1-hour session. 
+
+Link: https://github.com/AnnaWCao/testolin2020/tree/main
 
 
 ## Methods
