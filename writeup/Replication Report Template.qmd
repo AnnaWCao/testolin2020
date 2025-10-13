@@ -24,6 +24,20 @@ They recruited volunteer college students (n = 40) as huamn subjects. Study sess
 
 The key analysis that I'm trying to replicate is the GLM fit on individual level, and the coefficient fit for each dimension. I will use the original stimuli (the 300 sampled pairs). I could either recruit less participants (n = 10, 300 trials/30 mins each) or reduce the number of trials each participant completes (n = 20, 150 trials/15 mins each). Under these design, total participant compensation would be around $120.  
 
+What’s the measure of interest?
+- Mean accuracy on a dot array numerosity stroop task 
+
+What construct does it map to?
+- Human adults’ approximate representation of numerosity
+
+Is its estimate reported?
+- Taking mean
+- Effect size R^2 = 0.55
+- Unit: Number of correct trials? 
+
+Any measure of variability?
+- NA
+- NA
 
 Link: https://github.com/AnnaWCao/testolin2020/tree/main
 
